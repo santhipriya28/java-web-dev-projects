@@ -28,5 +28,30 @@ public class MenuItem {
     public void setNew(boolean aNew) {
         isNew = aNew;
     }
+
+    public Double getPrice(){
+        return price;
+    }
+
+    public MenuItemCategory getCategory() {
+        return category;
+    }
+
+    public boolean isNew() {
+        return isNew;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void PrintMenuItem()
+    {
+        // System.out.println("Single Item Details");
+        System.out.println("Item Description: " +description);
+        System.out.println("Price : " +price);
+        System.out.println("Category : " +category);
+        System.out.println("New :" +isNew);
+    }
 }
 
